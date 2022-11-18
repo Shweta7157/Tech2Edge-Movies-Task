@@ -4,6 +4,7 @@ import CoverImage from "../Assets/coversample.jpg";
 import CoverImage2 from "../Assets/coversample2.jpg";
 import Button from "@mui/material/Button";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+
 const Cover = (props) => {
   const [index, setIndex] = useState(0);
 
@@ -46,7 +47,7 @@ const Cover = (props) => {
               Check out TOP-50 Newly Launched Series!
             </h1>
             <h2 className="animate-transition-delay">
-              Click Below to Explore them All!
+              Explore Your New favourites!
             </h2>
             <Button
               variant="outlined"
