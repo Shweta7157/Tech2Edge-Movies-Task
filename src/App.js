@@ -1,4 +1,6 @@
 import "./App.css";
+import "./Style.scss";
+
 import Home from "./Components/Home";
 
 function App() {

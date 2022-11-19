@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let baseURL = "http://demo.tech2edge.co/samples/";
+export let baseURL = "http://demo.tech2edge.co/samples/";
 let headers = {
   "Content-Type": "application/json",
 };
@@ -19,9 +19,3 @@ export const fetchList = () => {
   });
 };
 
-// export const fetchImages = (imageURL) => {
-//   let url = `${baseURL}${imageURL}`;
-//   axios.get(url).then((response) => {
-//     return response.data;
-//   });
-// };
