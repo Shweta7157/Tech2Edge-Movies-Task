@@ -91,6 +91,7 @@ const MainList = (props) => {
     window.scrollTo(0, 0);
   };
 
+  // Fecthing main list api data
   const fetchListData = async () => {
     let resp = await fetchList();
     if (resp) {
@@ -102,6 +103,7 @@ const MainList = (props) => {
 
   return (
     <>
+      {/* Showing progress bar when data is not loaded */}
       {!listData ? (
         <>
           <Box sx={{ width: "100%" }}>
@@ -124,6 +126,7 @@ const MainList = (props) => {
             >
               <Paper elevation={3}>
                 <div className="row m-0">
+                  {/* Main Movie Card */}
                   <div className="col-sm-4 col-lg-4 col-md-4">
                     <div className="p-5">
                       <div
@@ -147,6 +150,7 @@ const MainList = (props) => {
                       </div>
                     </div>
                   </div>
+                  {/* List Details */}
                   <div className="col-sm-8 col-lg-8 col-md-8">
                     <div className="p-5">
                       <div className="row">
@@ -221,6 +225,7 @@ const MainList = (props) => {
                           ))}
 
                           {/* If in cards use this */}
+                          {/* Card layout also looks fine if added more designs */}
                           {/* <div className="row p-3">
                       {listData?.characters?.map((person, index) => (
                         <Card

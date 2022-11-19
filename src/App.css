@@ -1,3 +1,4 @@
+/* Carousel Styles */
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -13,12 +14,12 @@
   animation-delay: 2s;
 }
 
+/* Nav Styles */
 .nav-style {
   background-color: black !important;
   --bs-link-hover-color: #e24848;
 }
-/* #0e0b0b!important
-911a1a */
+
 /* Text Animation */
 .animate-characters {
   text-transform: uppercase;

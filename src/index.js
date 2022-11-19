@@ -6,6 +6,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Removing Strict Mode Because UseEffect Renders 2 times in the latest version.
 root.render(
   // <React.StrictMode>
   <App />

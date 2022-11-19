@@ -18,7 +18,7 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
-
+// Image Modal to display the image
 const ImageModal = (props) => {
   return (
     <>

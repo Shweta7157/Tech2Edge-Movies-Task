@@ -5,6 +5,7 @@ import CoverImage2 from "../Assets/coversample2.jpg";
 import Button from "@mui/material/Button";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 
+// Added Carousels for cover/banner
 const Cover = (props) => {
   const [index, setIndex] = useState(0);
 

@@ -5,7 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import MovieFilterOutlinedIcon from "@mui/icons-material/MovieFilterOutlined";
-
+// Including Navbar in Home
 const Navbar = () => {
   return (
     <div>
