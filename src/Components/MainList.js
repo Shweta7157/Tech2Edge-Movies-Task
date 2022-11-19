@@ -174,7 +174,6 @@ const MainList = (props) => {
                           </div>
                         </div>
                       </div>
-
                       <div className="row">
                         <div className="col-sm-2 col-lg-2 col-md-2">
                           <div className="pt-4">Starring:</div>
@@ -268,7 +267,6 @@ const MainList = (props) => {
                     </div> */}
                         </div>
                       </div>
-
                       <div className="row">
                         <div className="col-sm-2 col-lg-2 col-md-2">
                           <div>Rating:</div>
@@ -287,7 +285,7 @@ const MainList = (props) => {
                               />
                             </span>
                             <span className="col-sm-3 pt-1">
-                              <a href={() => false}>3,362 Ratings</a>
+                              <a href={"!#"}>3,362 Ratings</a>
                             </span>
                           </div>
                         </div>
@@ -327,7 +325,10 @@ const MainList = (props) => {
                                 <p className="card-text">
                                   Reviewed in India on 6 October 2022
                                 </p>
-                                <a href={() => false} className="btn btn-success">
+                                <a
+                                  href={() => false}
+                                  className="btn btn-success"
+                                >
                                   Helpful
                                 </a>
                               </div>
