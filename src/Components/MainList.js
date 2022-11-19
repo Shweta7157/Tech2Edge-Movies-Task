@@ -3,18 +3,20 @@ import { fetchList, baseURL } from "../Services/APIService";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
 
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import Divider from "@mui/material/Divider";
+// If cards layout used then uncomment
+
+// import Card from "@mui/material/Card";
+// import CardContent from "@mui/material/CardContent";
+// import CardMedia from "@mui/material/CardMedia";
+// import { CardActionArea } from "@mui/material";
+// import Divider from "@mui/material/Divider";
+// import Avatar from "@mui/material/Avatar";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Avatar from "@mui/material/Avatar";
 
 import PropTypes from "prop-types";
 import { styled } from "@mui/material/styles";
@@ -76,7 +78,7 @@ const MainList = (props) => {
     if (!listData) {
       fetchListData();
     }
-  }, []);
+  });
 
   const handleOpen = (imgurl) => {
     setOpen(true);
@@ -139,6 +141,7 @@ const MainList = (props) => {
                           <img
                             src={`${baseURL}${listData?.series?.img}`}
                             className="card__image"
+                            alt="."
                           />
                           <h2 className="card__title">
                             {listData?.series?.title}
@@ -161,6 +164,7 @@ const MainList = (props) => {
                           <div>
                             <img
                               style={{ height: "50px" }}
+                              alt="."
                               src={
                                 listData?.series?.ott === "Netflix"
                                   ? "https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456"
@@ -283,7 +287,7 @@ const MainList = (props) => {
                               />
                             </span>
                             <span className="col-sm-3 pt-1">
-                              <a href="">3,362 Ratings</a>
+                              <a href={() => false}>3,362 Ratings</a>
                             </span>
                           </div>
                         </div>
@@ -323,7 +327,7 @@ const MainList = (props) => {
                                 <p className="card-text">
                                   Reviewed in India on 6 October 2022
                                 </p>
-                                <a href="" className="btn btn-success">
+                                <a href={() => false} className="btn btn-success">
                                   Helpful
                                 </a>
                               </div>
