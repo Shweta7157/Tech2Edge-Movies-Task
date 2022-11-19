@@ -271,7 +271,7 @@ const MainList = (props) => {
                         </div>
                         <div className="col-sm-10 col-lg-10 col-md-10">
                           <div className="row">
-                            <span className="col-sm-3 col-lg-3 col-md-3">
+                            <span className="col-sm-4 col-lg-4 col-md-4">
                               <StyledRating
                                 name="highlight-selected-only"
                                 defaultValue={3}
@@ -298,7 +298,7 @@ const MainList = (props) => {
                             <div className="card m-2">
                               <h5 className="card-header">
                                 <div className="row">
-                                  <span className="col-sm-2 pt-1">
+                                  <span className="col-sm-3 pt-1">
                                     User1433 -
                                   </span>
                                   <span className="col-sm-3">
